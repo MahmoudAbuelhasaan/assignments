@@ -1,0 +1,22 @@
+In Python, when multiple inheritance is used and two parent classes have the same method name, 
+the method of the first parent class in the inheritance list (left-most) will be called.
+ This is known as the "Method Resolution Order" (MRO) in Python.
+
+
+In Python, when a child class inherits from multiple parent classes that have constructors (i.e., __init__ methods),
+ only the constructor of the first parent class in the inheritance list will be executed automatically.
+
+
+
+no 
+
+The reason for this is that Python uses duck typing and it's dynamic nature,
+ which means that the type of an object is determined by its behavior,
+ not by its class definition. This approach emphasizes readability and ease of use over strict typing,
+ which is why method overloading is not needed.
+
+Moreover, method overloading can lead to code that is harder to understand and maintain,
+as well as code that is harder to debug. In Python, the use of default arguments, variable-length arguments,
+and method overloading through different names can help make the code more readable, maintainable, and understandable.
+
+
